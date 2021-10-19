@@ -1,0 +1,30 @@
+version: '3.9'
+
+
+  services:
+    ms-gps:
+      image: ms-gps
+      build: .
+      environment:
+        NODE_ENV: development
+      ports:
+        -8090:8090
+      command:
+
+  ms-reward:
+    image: ms-reward
+    build: .
+    environment:
+      NODE_ENV: development
+    ports:
+      -8092:8092
+    command:
+
+  ms-user:
+        image: ms-reward
+        build: .
+        environment:
+          NODE_ENV: development
+        ports:
+          -8091:8091
+        command:
