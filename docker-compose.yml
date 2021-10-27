@@ -4,7 +4,7 @@ version: '3.9'
 services:
   ms-gps:
     image: ms-gps
-    build: ./
+    build: ../ms-gps
     environment:
       NODE_ENV: development
     ports:
@@ -13,7 +13,7 @@ services:
 
   ms-reward:
     image: ms-reward
-    build: .
+    build: ../ms-reward
     environment:
       NODE_ENV: development
     ports:
@@ -22,7 +22,7 @@ services:
 
   ms-user:
     image: ms-user
-    build: .
+    build: ../ms-user
     environment:
       NODE_ENV: development
     ports:
